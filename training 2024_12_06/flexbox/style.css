@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(13, 13, 19);
+}
+
+header {
+    color: tomato;
+}
+
+main {
+    color: rgb(255, 164, 80);
+}
+
+footer {
+    color: wheat;
+    position: static;
+    clear: both;
+}
+
+#email {
+    color: aqua;
+}
+
+#navbar {
+    background-color: gray
+}
+
+.contianer {
+    border: 10px double turquoise;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box {
+    width: calc(25% - 10px);
+    aspect-ratio: 1/1;
+    color: black;
+    float: left;
+    margin: 5px;
+    position: relative;
+
+    /*Flex-wrap and allign-content goes hand on hand*/
+
+    display: grid;
+    place-items: center;
+}
+
+#box1 {
+    background-color: red;
+    align-self: start;
+    order: 1;
+}
+
+#box2 {
+    background-color: rgb(255, 230, 0);
+}
+
+#box3 {
+    background-color: rgb(0, 255, 34);
+    order: -1;
+}
+
+
+#box4 {
+    background-color: rgb(0, 204, 255);
+}
+
+
+
+@media screen and (max-width:600px) {
+    .box {
+        clear: both;
+        width: 30%;
+    }
+
+    .contianer {
+        display: flow-root;
+        height: auto;
+    }
+}
