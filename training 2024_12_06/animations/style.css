@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(13, 13, 19);
+}
+
+header {
+    color: tomato;
+}
+
+main {
+    color: rgb(255, 164, 80);
+    height: 200vh;
+}
+
+footer {
+    color: wheat;
+    position: static;
+    clear: both;
+}
+
+#email {
+    color: aqua;
+}
+
+#navbar {
+    background-color: gray
+}
+
+#box {
+    width: 20%;
+    aspect-ratio: 1/1;
+    background-color: aqua;
+    border: 2px solid burlywood;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(50px, 500px);
+    position: sticky;
+    top: -500px;
+
+    animation-name: rotate-slide;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(.45, .05, .55, .95);
+}
+
+@keyframes rotate-slide {
+    /*form / to / %*/
+
+    /*% is used to make an object be alble to return to start*/
+
+    from {
+        transform: translate(500px, 500px) rotateZ(180deg);
+
+    }
+
+    to {
+        opacity: 0%;
+    }
+
+    50% {
+        background-color: rgb(255, 0, 0);
+    }
+
+    80% {
+        background-color: brown;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    /*selection,selection,selection{
+        property:decleration value
+    }*/
+}

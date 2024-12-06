@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(13, 13, 19);
+}
+
+header {
+    color: tomato;
+}
+
+main {
+    color: rgb(255, 164, 80);
+    height: 200vh;
+}
+
+footer {
+    color: wheat;
+    position: static;
+    clear: both;
+}
+
+#email {
+    color: aqua;
+}
+
+#navbar {
+    background-color: gray
+}
+
+#box {
+    width: 30%;
+    aspect-ratio: 1/1;
+    background-color: aqua;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    /*(x,y)*/
+    /*ratatez is normal rotation, the other flip*/
+    /*scale icopression/stretching. 1=100%*/
+    /*skew makes paralelograms*/
+    transform: rotate(50deg) translate(300px, 50px) scale(1.1, 0.9) skew(30deg, 0deg);
+    position: sticky;
+    top: -500px;
+    left: 0px;
+}
+
+@media screen and (max-width:700px) {
+    /*selection,selection,selection{
+        property:decleration value
+    }*/
+}
